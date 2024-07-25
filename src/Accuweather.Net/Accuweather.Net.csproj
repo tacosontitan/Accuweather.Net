@@ -1,13 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Folder Include="Locations\" />
-  </ItemGroup>
+    <PropertyGroup Label="Package Details">
+        <Version>1.0.0</Version>
+        <Description>A .NET surface for interacting with Accuweather's public APIs.</Description>
+        <PackageTags>accuweather;weather;locations;forecast;</PackageTags>
+    </PropertyGroup>
 
 </Project>
