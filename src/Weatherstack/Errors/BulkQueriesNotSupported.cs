@@ -7,7 +7,7 @@
     namespace, it is purely for organizational purposes.
 */
 
-namespace Weatherstack.Errors;
+namespace Weatherstack;
 
 public static partial class Errors
 {
