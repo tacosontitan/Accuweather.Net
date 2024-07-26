@@ -1,5 +1,5 @@
 ﻿// Copyright (c) 2024 tacosontitan
-// This file is part of the Samsara.Net project, which is distributed under the MIT license.
+// This file is part of the Weatherstack project, which is distributed under the MIT license.
 // See LICENSE for more information.
 
 namespace Weatherstack.Security;
