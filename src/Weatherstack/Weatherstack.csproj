@@ -3,7 +3,15 @@
     <PropertyGroup Label="Package Details">
         <Version>1.0.0</Version>
         <Description>A .NET surface for interacting with Accuweather's public APIs.</Description>
-        <PackageTags>accuweather;weather;locations;forecast;</PackageTags>
+        <PackageTags>weatherstack;weather;locations;forecast;</PackageTags>
     </PropertyGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'net4.8'">
+        <PackageReference Include="System.Text.Json" Version="8.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Weatherstack.Annotations\Weatherstack.Annotations.csproj" />
+    </ItemGroup>
 
 </Project>
