@@ -23,7 +23,24 @@ public struct WorldCoordinate
     [JsonPropertyName("lon")]
     public double Longitude { get; set; }
 
+    #if NET6_0_OR_GREATER
+
     /// <inheritdoc/>
+    [SuppressMessage(
+        category: "Style",
+        checkId: "IDE0046",
+        Justification = Justifications.GuardClausesShouldNotBeTerse)]
+    public override bool Equals(object? obj)
+    {
+        if (obj is not WorldCoordinate other)
+            return false;
+
+        return Equals(other);
+    }
+
+    #else
+
+        /// <inheritdoc/>
     [SuppressMessage(
         category: "Style",
         checkId: "IDE0046",
@@ -35,6 +52,8 @@ public struct WorldCoordinate
 
         return Equals(other);
     }
+
+    #endif
 
     public bool Equals(WorldCoordinate other) => Latitude == other.Latitude
         && Longitude == other.Longitude;
