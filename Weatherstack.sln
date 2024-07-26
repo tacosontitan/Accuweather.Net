@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9FC0B088-3B69-479C-A6F6-1D530B3C02EB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Accuweather.Net", "src\Accuweather.Net\Accuweather.Net.csproj", "{1769E304-C89F-4EC3-8653-FD6A503E6731}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weatherstack", "src\Weatherstack\Weatherstack.csproj", "{1769E304-C89F-4EC3-8653-FD6A503E6731}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

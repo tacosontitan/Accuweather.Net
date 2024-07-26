@@ -1,8 +1,8 @@
 {
     "cSpell.words": [
-        "Accuweather",
         "tacosontitan",
+        "Weatherstack",
         "xunit"
     ],
-    "dotnet.defaultSolution": "Accuweather.Net.sln"
+    "dotnet.defaultSolution": "Weatherstack.sln"
 }

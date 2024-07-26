@@ -1,3 +1,3 @@
-# Contributing to Accuweather.Net
+# Contributing to Weatherstack
 
 Coming soon...

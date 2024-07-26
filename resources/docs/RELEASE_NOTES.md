@@ -1,8 +1,8 @@
-# ⛈️ Accuweather.Net
+# ⛈️ Weatherstack
 
-Accuweather.Net is a simple package supporting interactions with Accuweather's public API.
+Weatherstack is a simple package supporting interactions with Accuweather's public API.
 
-![License](https://img.shields.io/github/license/tacosontitan/Accuweather.Net?logo=github&style=for-the-badge)
+![License](https://img.shields.io/github/license/tacosontitan/Weatherstack?logo=github&style=for-the-badge)
 
 ## 📝 Release Notes
 

@@ -34,14 +34,14 @@
     <PropertyGroup Label="Package Details">
         <Authors>tacosontitan</Authors>
         <Copyright>Copyright © 2024 tacosontitan and contibutors</Copyright>
-        <PackageProjectUrl>https://github.com/tacosontitan/Accuweather.Net</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/tacosontitan/Weatherstack</PackageProjectUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageLicenseFile>LICENSE</PackageLicenseFile>
         <PackageReleaseNotesFile>resources/docs/RELEASE_NOTES.md</PackageReleaseNotesFile>
         <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
         
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>https://github.com/tacosontitan/Accuweather.Net</RepositoryUrl>
+        <RepositoryUrl>https://github.com/tacosontitan/Weatherstack</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
