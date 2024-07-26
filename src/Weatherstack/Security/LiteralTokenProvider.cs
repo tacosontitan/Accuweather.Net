@@ -26,25 +26,36 @@ public sealed class LiteralTokenProvider
     /// </exception>
     public LiteralTokenProvider(string token)
     {
-        #if NET6_0_OR_GREATER
-
-        ArgumentNullException.ThrowIfNull(token);
-        ArgumentException.ThrowIfNullOrWhiteSpace(token);
-
-        #else
-
-        if (token is null)
-            throw new ArgumentNullException(nameof(token));
-
-        if (string.IsNullOrWhiteSpace(token))
-            throw new ArgumentException("The token cannot be empty or whitespace.", nameof(token));
-
-        #endif
-
+        ValidateToken(token);
         _token = token;
     }
 
     /// <inheritdoc />
     public string GetToken() =>
         _token;
+
+    private static void ValidateToken(string token)
+    {
+        #if NET6_0_OR_GREATER
+
+        ArgumentNullException.ThrowIfNull(token);
+
+        #else
+
+        if (token is null)
+            throw new ArgumentNullException(nameof(token));
+
+        #endif
+
+        #if NET8_0_OR_GREATER
+
+        ArgumentException.ThrowIfNullOrWhiteSpace(token);
+
+        #else
+
+        if (string.IsNullOrWhiteSpace(token))
+            throw new ArgumentException("The token cannot be empty or whitespace.", nameof(token));
+
+        #endif
+    }
 }
