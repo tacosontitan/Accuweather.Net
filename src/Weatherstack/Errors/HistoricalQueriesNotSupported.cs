@@ -8,6 +8,7 @@
 */
 
 namespace Weatherstack.Errors;
+
 public static partial class Errors
 {
     /// <summary>
