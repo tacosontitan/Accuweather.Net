@@ -1,6 +1,6 @@
 # ⛈️ Weatherstack
 
-Weatherstack allows for simplified interactions with Weatherstack's public APIs.
+Weatherstack allows for simplified interactions with [Weatherstack's public APIs](https://weatherstack.com/documentation).
 
 ![License](https://img.shields.io/github/license/tacosontitan/Weatherstack?logo=github&style=for-the-badge)
 
