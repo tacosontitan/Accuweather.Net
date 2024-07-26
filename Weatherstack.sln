@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9FC0B088-3B6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Weatherstack", "src\Weatherstack\Weatherstack.csproj", "{1769E304-C89F-4EC3-8653-FD6A503E6731}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{70868634-452C-442F-875D-CFC6E349AD02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weatherstack.Tests", "test\Weatherstack.Tests\Weatherstack.Tests.csproj", "{E21041D5-7F2D-47A8-A30E-E9FBBB7AD666}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{1769E304-C89F-4EC3-8653-FD6A503E6731}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1769E304-C89F-4EC3-8653-FD6A503E6731}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1769E304-C89F-4EC3-8653-FD6A503E6731}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E21041D5-7F2D-47A8-A30E-E9FBBB7AD666}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E21041D5-7F2D-47A8-A30E-E9FBBB7AD666}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E21041D5-7F2D-47A8-A30E-E9FBBB7AD666}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E21041D5-7F2D-47A8-A30E-E9FBBB7AD666}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1769E304-C89F-4EC3-8653-FD6A503E6731} = {9FC0B088-3B69-479C-A6F6-1D530B3C02EB}
+		{E21041D5-7F2D-47A8-A30E-E9FBBB7AD666} = {70868634-452C-442F-875D-CFC6E349AD02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {777F9624-66D2-4F90-BC60-0A405213F7C3}
