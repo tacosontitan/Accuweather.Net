@@ -14,10 +14,10 @@ public static partial class Errors
     /// <summary>
     /// User requested a resource which does not exist.
     /// </summary>
-    public static Error NotFound => new()
+    public static ApiError NotFound => new()
     {
         Code = 404,
         Type = "404_not_found",
-        Message = "User requested a resource which does not exist."
+        Information = "User requested a resource which does not exist."
     };
 }

@@ -14,10 +14,10 @@ public static partial class Errors
     /// <summary>
     /// User did not supply an access key / invalid access key.
     /// </summary>
-    public static Error Unauthorized => new()
+    public static ApiError Unauthorized => new()
     {
         Code = 101,
         Type = "unauthorized",
-        Message = "User did not supply an access key / invalid access key."
+        Information = "User did not supply an access key / invalid access key."
     };
 }

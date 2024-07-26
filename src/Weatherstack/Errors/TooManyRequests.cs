@@ -14,10 +14,10 @@ public static partial class Errors
     /// <summary>
     /// User has reached his subscription's monthly request allowance.
     /// </summary>
-    public static Error TooManyRequests => new()
+    public static ApiError TooManyRequests => new()
     {
         Code = 429,
         Type = "too_many_requests",
-        Message = "User has reached his subscription's monthly request allowance."
+        Information = "User has reached his subscription's monthly request allowance."
     };
 }
