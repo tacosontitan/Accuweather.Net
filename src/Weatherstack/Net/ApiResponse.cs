@@ -4,7 +4,7 @@
 
 using System.Text.Json.Serialization;
 
-namespace Weatherstack;
+namespace Weatherstack.Net;
 
 /// <summary>
 ///     Represents a response from the Weatherstack API.
