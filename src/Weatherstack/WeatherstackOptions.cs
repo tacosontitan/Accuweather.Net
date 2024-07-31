@@ -1,4 +1,8 @@
-﻿namespace Weatherstack;
+﻿// Copyright (c) 2024 tacosontitan
+// This file is part of the Weatherstack project, which is distributed under the MIT license.
+// See LICENSE for more information.
+
+namespace Weatherstack;
 
 /// <summary>
 ///     Represents the options for the Weatherstack service.
