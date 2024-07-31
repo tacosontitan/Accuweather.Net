@@ -2,6 +2,10 @@
 // This file is part of the Weatherstack project, which is distributed under the MIT license.
 // See LICENSE for more information.
 
+using System.Diagnostics.CodeAnalysis;
+
+using Weatherstack.Annotations.Suppression;
+
 /*
     The folder containing this file is not intended to be a part of the
     namespace, it is purely for organizational purposes.
@@ -20,6 +24,10 @@ public static partial class WeatherstackServiceExtensions
         ValidateServiceProvider(source);
     }
 
+    [SuppressMessage(
+        category: "Style",
+        checkId: "IDE0022",
+        Justification = Justifications.BracesImproveLegibility)]
     private static void AssertNotNull(IWeatherstackService service)
     {
         #if NET6_0_OR_GREATER
@@ -37,16 +45,7 @@ public static partial class WeatherstackServiceExtensions
     private static void ValidateServiceProvider(IWeatherstackService source)
     {
         const string errorMessage = "The service provider cannot be null.";
-
-        #if NET6_0_OR_GREATER
-
-        InvalidOperationException.ThrowIfNull(source.ServiceProvider, errorMessage);
-
-        #else
-
         if (source.ServiceProvider is null)
             throw new InvalidOperationException(errorMessage);
-
-        #endif
     }
 }
