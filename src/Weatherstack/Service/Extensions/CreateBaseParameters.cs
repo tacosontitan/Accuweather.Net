@@ -1,5 +1,15 @@
-﻿using System;
+﻿// Copyright (c) 2024 tacosontitan
+// This file is part of the Weatherstack project, which is distributed under the MIT license.
+// See LICENSE for more information.
 
+using Microsoft.Extensions.DependencyInjection;
+
+using Weatherstack.Security;
+
+/*
+    The folder containing this file is not intended to be a part of the
+    namespace, it is purely for organizational purposes.
+*/
 namespace Weatherstack;
 
 public static partial class WeatherstackServiceExtensions
@@ -9,7 +19,8 @@ public static partial class WeatherstackServiceExtensions
         UnitPreference? unitPreference = null,
         LanguagePreference? languagePreference = null)
     {
-        var token = source.GetToken();
+        var tokenProvider = source.ServiceProvider.GetRequiredService<ITokenProvider>();
+        var token = tokenProvider.GetToken();
         var parameters = new Dictionary<string, string>
         {
             ["access_key"] = token
