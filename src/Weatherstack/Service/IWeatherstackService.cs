@@ -22,4 +22,9 @@ public interface IWeatherstackService
     ///     when interacting with the Weatherstack API.
     /// </summary>
     IServiceProvider ServiceProvider { get; }
+
+    /// <summary>
+    ///     Gets the options for the Weatherstack service.
+    /// </summary>
+    WeatherstackOptions Options { get; }
 }
