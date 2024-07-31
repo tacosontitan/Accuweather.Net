@@ -14,7 +14,10 @@ namespace Weatherstack.Net;
 /// </param>
 public abstract class ApiRequest
 {
-
+    /// <summary>
+    ///     Gets or sets the endpoint where the request will be sent.
+    /// </summary>
+    public string? Type { get; set; }
 
     /// <summary>
     ///     Gets or sets the query to use for the request.
@@ -22,7 +25,17 @@ public abstract class ApiRequest
     [JsonPropertyName("query")]
     public string? Query { get; set; }
 
+    /// <summary>
+    ///     Gets or sets the language to use for the request.
+    /// </summary>
+    [JsonPropertyName("language")]
+    public LanguagePreference? Language { get; set; }
 
+    /// <summary>
+    ///     Gets or sets the units to use for the request.
+    /// </summary>
+    [JsonPropertyName("units")]
+    public UnitPreference? Units { get; set; }
 
     /// <summary>
     ///     Gets or sets the JSONP callback to use for the request.

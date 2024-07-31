@@ -16,6 +16,18 @@ public abstract class ApiResponse<TRequest>
     where TRequest : ApiRequest
 {
     /// <summary>
+    ///     Gets or sets the response data.
+    /// </summary>
+    [JsonPropertyName("success")]
+    public bool Success { get; set; }
+
+    /// <summary>
+    ///     Gets or sets the error that occurred during the request, if applicable.
+    /// </summary>
+    [JsonPropertyName("error")]
+    public ApiError? Error { get; set; }
+
+    /// <summary>
     ///     Gets or sets the request that generated this response.
     /// </summary>
     [JsonPropertyName("request")]
